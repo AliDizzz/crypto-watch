@@ -31,7 +31,20 @@ export default function Home({ res }) {
                   <h2 className="text-2xl mb-6 uppercase tracking-wider">
                     {crypto.name} 
                   </h2>
-                  <h3>Rang actuel {crypto.rank}</h3>
+                  <p>Rang actuel <span className="font-bold">{crypto.rank}</span></p>
+
+                  <p>
+                    Delta : {""}
+                    <span className="font-bold"> {parseFloat(crypto.rank_delta)} </span>
+
+                    {crypto.rank_delta < 0 ? (
+                          <span className="text-red-500"> &#x2798;</span>
+                        ) : (
+                          <span className="text-green-500"> &#x279A;</span>
+                        )  }
+                      
+                  </p>
+
                   <h3 className="font-bold text-2xl mb-4">
                     {parseFloat(crypto.price).toFixed(2)} €
                   </h3>
