@@ -25,13 +25,35 @@ export default function Layout({ children, page }) {
                     <div>
                         <Image 
                         src="/main.jpg" 
-                        alt="footer-pic" 
+                        alt="header-pic" 
                         width="400" height="50" 
                         className="rounded-3xl object-cover"
                         quality={50}
                         />
                     </div>
                 </header>
+                <main className="pt-4 mx-20">{children}</main>
+
+                <footer className="p-10">
+                <Image 
+                        src="/main.jpg" 
+                        alt="footer-pic" 
+                        width="1000" height="50" 
+                        className="rounded-3xl object-cover"
+                        quality={50}
+                        />
+                        <ul className="pt-10 pb-4 flex justify-around">
+                            <li>À propos</li>
+                            <li>Qui sommes-nous</li>
+                            <li>From Ali Yildiz - 2021</li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Architecto a voluptas iste cumque eos quae asperiores excepturi vel, 
+                            incidunt dignissimos totam sit. Rerum dolore accusamus fugiat, 
+                            illo numquam accusantium fuga?</p>
+                </footer>
+
+                <style jsx>{"p {color: grey;}"}</style>
         </div>
     )
 }
