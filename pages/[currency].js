@@ -13,14 +13,14 @@ export default function Currency({res}) {
                 bg-blue-100 md:w-auto 
                 flex-1 mx-5"
                 >
-                    <div className="text-center">
+                        <h2 className="text-2xl mb-6 uppercase tracking-wider">{res.name}</h2>
+                    <div>
                         <img 
                         src={res.logo_url} 
                         alt={res.name} 
-                        className="w-20 h-20 mx-auto mb-6"
+                        className="float-left w-20 h-20 mx-auto mb-6"
                         />
                     </div>
-                    <h2 className="text-2xl mb-6 uppercase tracking-wider">{res.name}</h2>
                     <p>{res.description}</p>
                     <p className="pt-5 text-blue-500">
                         <a href={res.reddit_url} target="_blank">{res.reddit_url}</a>

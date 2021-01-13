@@ -4,12 +4,14 @@ import Image from "next/image";
 
 export default function Layout({ children, page }) {
     return (
-        <div className="bg-blue-50 pt-5 text-center min-h-screen">
+        <div className="bg-layoutBgPic bg-cover bg-center pt-5 text-center min-h-screen">
+            
             <Head>
                 <title>{page}</title>
             </Head>
                 <header className="container-lg">
                     <h1 className="text-5xl mb-2">CRYPTO WATCH</h1>
+                    <h3>Top 10 des crypto-monnaies les plus connues</h3>
                     <div className="inline-grid grid-cols-2 gap-x-10 p-4">
                         <Link rel="stylesheet" href="/">
                             <button className="bg-blue-200 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-300">
