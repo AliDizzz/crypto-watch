@@ -14,12 +14,12 @@ export default function Layout({ children, page }) {
                     <h3>Top 10 des crypto-monnaies les plus connues</h3>
                     <div className="inline-grid grid-cols-2 gap-x-10 p-4">
                         <Link rel="stylesheet" href="/">
-                            <button className="bg-blue-200 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-300">
+                            <button className="bg-gradient-to-t from-black via-yellow-500 to-yellow-500 p-3 m-2 rounded-3xl hover:shadow-md ">
                                 Accueil
                             </button>
                         </Link>
                         <Link rel="stylesheet" href="/about">
-                            <button className="bg-blue-200 p-3 m-2 rounded-3xl hover:shadow-md border-2 border-blue-300">
+                            <button className="bg-gradient-to-t from-black via-yellow-500 to-yellow-500 p-3 m-2 rounded-3xl hover:shadow-md ">
                                 À propos
                             </button>
                         </Link>

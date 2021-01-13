@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function about() {
     return (
     <Layout page="À propos">
-        <h1 className="text-4xl">Qu'est-ce qu'une crypto monnaie ?
+        <h1 className="text-6xl">Qu'est-ce qu'une crypto monnaie ?
 </h1>
         <br />
         <p>

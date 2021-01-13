@@ -9,7 +9,15 @@ export default function Home({ res }) {
           {res.map((crypto, index) => (
             <li 
             key={index} 
-            className="relative hover:shadow-md p-8 border border-blue-300 rounded-3xl bg-blue-100 md:w-auto flex-1 my-5 mx-5"
+            className="
+            bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500
+            relative 
+            hover:shadow-md 
+            p-8 
+            border-black border-4	
+            rounded-3xl  
+            md:w-auto 
+            flex-1 my-5 mx-5"
             >
               <Link href={`/${crypto.id}`}> 
                 <a className="rounded-md">

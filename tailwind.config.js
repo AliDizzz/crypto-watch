@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: theme => ({
         
         'layoutBgPic': "url('/BG.jpg')",
+        'cryptoBgPic': "url('/BG2.jpg')",
       })
     },
   },
