@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Layout({ children, page }) {
     return (
@@ -20,6 +21,15 @@ export default function Layout({ children, page }) {
                                 À propos
                             </button>
                         </Link>
+                    </div>
+                    <div>
+                        <Image 
+                        src="/main.jpg" 
+                        alt="footer-pic" 
+                        width="400" height="50" 
+                        className="rounded-3xl object-cover"
+                        quality={50}
+                        />
                     </div>
                 </header>
         </div>
