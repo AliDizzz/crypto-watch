@@ -11,7 +11,8 @@ export default function Currency({res}) {
                 hover:shadow md p-8 
                 border border-blue-300 sm:rounded-3xl 
                 bg-gray-200 md:w-auto 
-                flex-1 mx-5"
+                flex-wrap 
+                mx-5"
                 >
                         <h2 className="text-2xl mb-6 uppercase tracking-wider">{res.name}</h2>
                     <div>

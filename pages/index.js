@@ -5,7 +5,7 @@ export default function Home({ res }) {
 
   return (
       <Layout page="Crypto Watch - Accueil" >
-        <ul className="flex flex-wrap justify-around py-10">
+        <ul className="flex justify-center flex-wrap py-10 space-x-1 space-y-1">
           {res.map((crypto, index) => (
             <li 
             key={index} 
@@ -13,11 +13,12 @@ export default function Home({ res }) {
             bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500
             relative 
             hover:shadow-md 
-            p-8 
-            border-black border-4	
+            box-content h-50 w-32 p-4 
+            border-black border-4
             rounded-3xl  
-            md:w-auto 
-            flex-1 my-5 mx-5"
+            
+            
+            "
             >
               <Link href={`/${crypto.id}`}> 
                 <a className="rounded-md">
