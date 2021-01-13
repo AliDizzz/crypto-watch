@@ -1,12 +1,24 @@
 import Layout from "../components/Layout";
 
-export default function Home() {
+export default function Home({ res }) {
+  console.log(res)
   return (
       <Layout page="Crypto Watch - Accueil" >
-        <h1>Qu'est-ce qu'une crypto monnaie ?</h1><br/>
-        <p>Le terme crypto monnaie désigne à la fois une monnaie virtuelle et le système de paiement de pair à pair qui l'accompagne.
-          Il s'agit de monnaies virtuelles sans supports physiques,
-          non régulées par un organe central et dont la valeur n'est pas indexée à une devise légale ou une matière première.</p>
+        
       </Layout>
   )
+}
+
+//server side rendered
+export async function getStaticProps(context) {
+  try {
+    const res = await fetch(
+      "https://api.nomics.com/v1/currencies/ticker?key=2a131e8732f83eebe345a11e64b7f52d&ids=BTC,ETH,XRP,AAVE,LTC,3XT,BCH,ADA,BOR&interval=1d,30d,365d&convert=EUR"
+    ).then((res) => res.json());
+    return {
+      props: { res }
+    }
+  } catch (err) {
+    console.log(err);
+  }
 }
