@@ -1,8 +1,9 @@
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div >
-      Hello Next
-    </div>
+      <Layout page="Crypto Watch - Accueil" >
+        <h1>Accueil</h1>
+      </Layout>
   )
 }
