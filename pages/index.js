@@ -11,7 +11,7 @@ export default function Home({ res }) {
             key={index} 
             className="relative hover:shadow-md p-8 border border-blue-300 rounded-3xl bg-blue-100 md:w-auto flex-1 my-5 mx-5"
             >
-              <Link href="/"> 
+              <Link href={`/${crypto.id}`}> 
                 <a className="rounded-md">
                   <div className="text-center">
                     <img 
@@ -73,7 +73,7 @@ export default function Home({ res }) {
 export async function getStaticProps(context) {
   try {
     const res = await fetch(
-      "https://api.nomics.com/v1/currencies/ticker?key=2a131e8732f83eebe345a11e64b7f52d&ids=BTC,ETH,XRP,ADA,LTC,LINK,BCH,DOT,XLM,USDT&interval=1d,30d,365d&convert=EUR"
+      `https://api.nomics.com/v1/currencies/ticker?key=2a131e8732f83eebe345a11e64b7f52d&ids=BTC,ETH,XRP,ADA,LTC,LINK,BCH,DOT,XLM,USDT&interval=1d,30d,365d&convert=EUR`
     ).then((res) => res.json());
     return {
       props: { res }

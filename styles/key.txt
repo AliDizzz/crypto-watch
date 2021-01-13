@@ -1,3 +1,6 @@
 2a131e8732f83eebe345a11e64b7f52d
 
 https://api.nomics.com/v1/currencies/ticker?key=2a131e8732f83eebe345a11e64b7f52d&ids=BTC,ETH,XRP,AAVE,LTC,3XT,BCH,ADA,BOR&interval=1d,30d,365d&convert=EUR
+
+
+curl "https://api.nomics.com/v1/currencies?key=2a131e8732f83eebe345a11e64b7f52d&ids=BTC,ETH,XRP,ADA,LTC,LINK,BCH,DOT,XLM,USDT&attributes=id,name,logo_url,description,reddit_url"
