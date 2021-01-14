@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Layout from "../components/Layout";
 
@@ -8,17 +8,27 @@ export default function Home({ res }) {
       <Layout page="Crypto Watch - Accueil" >
         <ul className="flex justify-center flex-wrap py-10 space-x-1 space-y-1">
           {res.map((crypto, index) => (
-            <li 
+            <motion.li 
             key={index} 
             className="
             bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500
-            relative 
+            
             hover:shadow-md 
             box-content h-50 w-32 p-4 
             border-black border-4
             rounded-3xl
-            "
+            
+            " 
+            whileHover={{
+              position: 'relative',
+              zIndex: 1,
+              scale: 1.2,
+              transition: {
+                duration: .2
+              },
+            }}
             >
+              
               <Link href={`/${crypto.id}`}> 
                 <a className="rounded-md">
                   <div className="text-center">
@@ -83,7 +93,7 @@ export default function Home({ res }) {
                   </p>
                 </a>
               </Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </Layout>
