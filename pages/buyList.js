@@ -63,43 +63,57 @@ export default function buyList() {
                                 </span>{" "}
                             </td>{" "}
                         </tr>{" "}
-                        <tr className="bg-gray-300">
-                            
+                        
+                        
+                        
+                            <tr className="bg-gray-300 hover hover:bg-gray-100" >
                             <td>
+                            <a href="https://www.coinbase.com/fr/" target="_blank">
                                 <strong> Coinbase </strong>{" "}
+                            </a>
                             </td>
-                            
+                            {" "}
                             <td> Débutants </td> <td> Achat / Vente </td>{" "}
                             <td> États - Unis </td> <td> Bitcoin, Ethereum, Litecoin </td>{" "}
                             <td> Taux élevés </td> <td> CB, virements, crypto - monnaie </td>{" "}
-                        </tr>{" "}
-                        <tr>
+                            </tr>{" "}
+                        
+                            <tr className="bg-gray-200 hover hover:bg-gray-100" >
                             <td>
+                            <a href="https://www.etoro.com/fr/" target="_blank">
                                 <strong> eToro </strong>{" "}
+                                </a>
                             </td>{" "}
                             <td> Débutants </td> <td> Trading </td> <td> Chypre </td>{" "}
                             <td> Bitcoin, Ethereum, +12 </td> <td> Moyens </td>{" "}
                             <td> CB, virement, PayPal... </td>{" "}
                         </tr>{" "}
-                        <tr className="bg-gray-300">
+
+                            <tr className="bg-gray-300 hover hover:bg-gray-100" >
                             <td>
+                            <a href="https://www.kraken.com/fr-fr/" target="_blank">
                                 <strong> Kraken </strong>{" "}
+                                </a>
                             </td>{" "}
                             <td> Expérimentés </td> <td> Echange </td> <td> États - Unis </td>{" "}
                             <td> Bitcoin, Ethereum, +15 </td> <td> Taux faibles </td>{" "}
                             <td> CB et virements </td>{" "}
                         </tr>{" "}
-                        <tr>
+                        <tr className="bg-gray-200 hover hover:bg-gray-100" >
                             <td>
+                            <a href="https://www.binance.com/fr/" target="_blank">
                                 <strong> Binance </strong>{" "}
+                                </a>
                             </td>{" "}
                             <td> Expérimentés </td> <td> Trading </td> <td> Asie </td>{" "}
                             <td> Bitcoin, +200 </td> <td> Taux faibles </td>{" "}
                             <td> Crypto - monnaie uniquement </td>{" "}
                         </tr>{" "}
-                        <tr className="bg-gray-300">
+                        <tr className="bg-gray-300 hover hover:bg-gray-100" >
                             <td>
+                            <a href="https://www.coinhouse.com/fr/" target="_blank">
                                 <strong> Coinhouse </strong>{" "}
+                                </a>
                             </td>{" "}
                             <td> Tous profils </td> <td> Trading, Achat et vente </td>{" "}
                             <td> France </td> <td> Bitcoin et Ethereum </td> <td> Moyens </td>{" "}
