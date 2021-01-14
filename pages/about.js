@@ -7,7 +7,7 @@ export default function about() {
         
         <div className="
         bg-gray-200 md:w-auto 
-        border border-black sm:rounded-3xl
+        border border-black sm:rounded-3xl 
         ">
         <br/>
         <h1 className="text-6xl">Qu'est-ce qu'une crypto monnaie ?</h1>
@@ -54,7 +54,7 @@ export default function about() {
         10€, 50€, 200€, 1.000€, etc. ... Et si les perspectives du bitcoin ne sont 
         pas les plus intéressantes, il est toujours possible d'investir dans des 
         altcoins.
-        </p>
+        </p><br/>
         </div>
         
     </Layout>

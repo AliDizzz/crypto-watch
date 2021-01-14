@@ -27,11 +27,16 @@ export default function Layout({ children, page }) {
 
                     <h1 className="text-5xl mb-2 text-yellow-400">CRYPTO WATCH</h1>
                     </motion.div>
-                    <h3>Top 10 des crypto-monnaies les plus connues</h3>
-                    <div className="inline-grid grid-cols-2 gap-x-10 p-4">
+                    <h3 className="text-2xl mb-2 text-gray-300">Top 10 des crypto-monnaies les plus connues</h3>
+                    <div className="inline-grid grid-cols-3 gap-x-10 p-4">
                         <Link rel="stylesheet" href="/">
                             <button className="bg-gradient-to-t from-black via-yellow-500 to-yellow-500 p-3 m-2 rounded-3xl hover:shadow-md uppercase">
                                 Accueil
+                            </button>
+                        </Link>
+                        <Link rel="stylesheet" href="/buyList">
+                            <button className="bg-gradient-to-t from-black via-yellow-500 to-yellow-500 p-3 m-2 rounded-3xl hover:shadow-md uppercase">
+                                Où acheter
                             </button>
                         </Link>
                         <Link rel="stylesheet" href="/about">
