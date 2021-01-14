@@ -18,12 +18,18 @@ export default function Home({ res }) {
             rounded-3xl
             " 
             whileHover={{
-              position: 'relative',
-              zIndex: 1,
-              scale: [1, 1.4, 1.2],
-              rotate: [0, 5, -5, 0],
-              transition: {
-                duration: .4
+              position: 'relative',   // position solide
+              zIndex: 1,              // mis au premier plan
+              scale: [1, 1.4, 1.2],   // grosseur de zoom
+              rotate: [0, 5, -5, 0],  // rotation
+              // filter: [
+              //   'hue-rotate(0) grayscale(0)',
+              //   'hue-rotate(360deg) grayscale(1)',
+              //   'hue-rotate(45deg) grayscale(1)',
+              //   'hue-rotate(0) grayscale(0)'
+              // ],
+              transition: {           //  temps de transition
+                duration: .3
               },
             }}
             >
