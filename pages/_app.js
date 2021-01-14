@@ -1,9 +1,9 @@
 import '../styles/globals.css'
 import { motion } from 'framer-motion'; //80.7k (gzipped: 26.7k)
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
-  <motion.div initial="pageInitial" animate="pageAnimate" variants={{
+  <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
     pageInitial: {
       opacity: 0
     },
