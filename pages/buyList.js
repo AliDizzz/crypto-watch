@@ -7,12 +7,14 @@ export default function buyList() {
         <Layout page="À propos">
             <div
                 className="
+                bg-contain
                 bg-gray-200 md:w-auto 
                 border border-gray-800 md:rounded-3xl
+
                 "
             >
                 <br />
-                <h1 className="text-6xl"> Où acheter de la crypto monnaie ? </h1> <br />
+                <h1 className="text-4xl"> Où acheter de la crypto monnaie ? </h1> <br />
                 <p>
                     Le terme crypto monnaie désigne à la fois une monnaie virtuelle et le
                     système de paiement de pair à pair qui l 'accompagne. Il s' agit de
@@ -23,10 +25,10 @@ export default function buyList() {
                 <br />
                 </div><br/>
                 
-            <div >
+                <div className="overflow-x-auto">
                 <table className="table-auto bg-gray-200 border-separate border border-gray-800">
-                    <tbody>
-                        <tr className="">
+                    <tbody  className="flex-wrap">
+                        <tr>
                             <td className="bg-yellow-300">
                                 <span className="color-black">
                                     <strong> Site </strong>{" "}

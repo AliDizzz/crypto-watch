@@ -28,7 +28,7 @@ export default function Layout({ children, page }) {
                     <h1 className="text-5xl mb-2 text-yellow-400">CRYPTO WATCH</h1>
                     </motion.div>
                     <h3 className="text-2xl mb-2 text-gray-300">Top 10 des crypto-monnaies les plus connues</h3>
-                    <div className="inline-grid grid-cols-3 gap-x-10 p-4">
+                    <div className="inline-grid grid-cols-3 gap-x-5 p-4">
                         <Link rel="stylesheet" href="/">
                             <button className="bg-gradient-to-t from-black via-yellow-500 to-yellow-500 p-3 m-2 rounded-3xl hover:shadow-md uppercase">
                                 Accueil
@@ -66,9 +66,9 @@ export default function Layout({ children, page }) {
                         quality={50}
                         />
                         <ul className="pt-10 pb-4 flex justify-around">
-                            <li>À propos</li>
-                            <li>Qui sommes-nous</li>
-                            <li>From Ali Yildiz - 2021</li>
+                            <li className="text-gray-100"><a href="https://github.com/AliDizzz">By Ali Yildiz - 2021 </a></li>
+                            <li>Next.js / Tailwind</li>
+                            <li><a href="https://www.linkedin.com/in/ali-yildiz-06245b1a4/">My Linkedin </a></li>
                         </ul>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Architecto a voluptas iste cumque eos quae asperiores excepturi vel, 

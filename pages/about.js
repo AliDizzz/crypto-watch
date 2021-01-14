@@ -10,7 +10,7 @@ export default function about() {
         border border-black sm:rounded-3xl 
         ">
         <br/>
-        <h1 className="text-6xl">Qu'est-ce qu'une crypto monnaie ?</h1>
+        <h1 className="text-5xl">Qu'est-ce qu'une crypto monnaie ?</h1>
         <br />
         <p>
         Le terme crypto monnaie désigne à la fois une monnaie virtuelle et le
