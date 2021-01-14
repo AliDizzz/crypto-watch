@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,7 +11,22 @@ export default function Layout({ children, page }) {
                 <title>{page}</title>
             </Head>
                 <header className="container-lg">
+                    <motion.div initial="hidden" animate="visible" variants={{
+                        hidden: {
+                            scale: .8,
+                            opacity: 0
+                        },
+                        visible: {
+                            scale: 1,
+                            opacity: 1,
+                            transition: {
+                                delay: .4
+                            }
+                        },
+                    }}>
+
                     <h1 className="text-5xl mb-2 text-yellow-400">CRYPTO WATCH</h1>
+                    </motion.div>
                     <h3>Top 10 des crypto-monnaies les plus connues</h3>
                     <div className="inline-grid grid-cols-2 gap-x-10 p-4">
                         <Link rel="stylesheet" href="/">

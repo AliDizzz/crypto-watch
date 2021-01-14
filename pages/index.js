@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import Layout from "../components/Layout";
 
@@ -15,9 +16,7 @@ export default function Home({ res }) {
             hover:shadow-md 
             box-content h-50 w-32 p-4 
             border-black border-4
-            rounded-3xl  
-            
-            
+            rounded-3xl
             "
             >
               <Link href={`/${crypto.id}`}> 
