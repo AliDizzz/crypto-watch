@@ -10,7 +10,7 @@ export default function Layout({ children, page }) {
                 <title>{page}</title>
             </Head>
                 <header className="container-lg">
-                    <h1 className="text-5xl mb-2">CRYPTO WATCH</h1>
+                    <h1 className="text-5xl mb-2 text-yellow-400">CRYPTO WATCH</h1>
                     <h3>Top 10 des crypto-monnaies les plus connues</h3>
                     <div className="inline-grid grid-cols-2 gap-x-10 p-4">
                         <Link rel="stylesheet" href="/">
