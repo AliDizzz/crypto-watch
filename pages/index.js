@@ -20,9 +20,10 @@ export default function Home({ res }) {
             whileHover={{
               position: 'relative',
               zIndex: 1,
-              scale: 1.2,
+              scale: [1, 1.4, 1.2],
+              rotate: [0, 5, -5, 0],
               transition: {
-                duration: .2
+                duration: .4
               },
             }}
             >
