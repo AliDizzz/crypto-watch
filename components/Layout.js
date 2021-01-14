@@ -66,14 +66,11 @@ export default function Layout({ children, page }) {
                         quality={50}
                         />
                         <ul className="pt-10 pb-4 flex justify-around">
-                            <li className="text-gray-100"><a href="https://github.com/AliDizzz">By Ali Yildiz - 2021 </a></li>
-                            <li>Next.js / Tailwind</li>
-                            <li><a href="https://www.linkedin.com/in/ali-yildiz-06245b1a4/">My Linkedin </a></li>
+                            <li className="font-black"><a href="https://github.com/AliDizzz">Ali Yildiz - 2021 </a></li>
+                            <li className="font-black">Next.js / Tailwind</li>
+                            <li className="font-black"><a href="https://www.linkedin.com/in/ali-yildiz-06245b1a4/">My Linkedin </a></li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Architecto a voluptas iste cumque eos quae asperiores excepturi vel, 
-                            incidunt dignissimos totam sit. Rerum dolore accusamus fugiat, 
-                            illo numquam accusantium fuga?</p>
+                        
                 </footer>
 
                 <style jsx>{"p {color: grey;}"}</style>
