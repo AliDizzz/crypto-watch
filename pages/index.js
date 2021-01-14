@@ -12,12 +12,10 @@ export default function Home({ res }) {
             key={index} 
             className="
             bg-gradient-to-t from-yellow-500 via-yellow-300 to-yellow-500
-            
             hover:shadow-md 
             box-content h-50 w-32 p-4 
             border-black border-4
             rounded-3xl
-            
             " 
             whileHover={{
               position: 'relative',
