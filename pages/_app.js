@@ -1,7 +1,18 @@
 import '../styles/globals.css'
+import { motion } from 'framer-motion'; //80.7k (gzipped: 26.7k)
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+  <motion.div initial="pageInitial" animate="pageAnimate" variants={{
+    pageInitial: {
+      opacity: 0
+    },
+    pageAnimate: {
+      opacity: 1
+    },
+  }}>
+    <Component {...pageProps} />
+  </motion.div>)
 }
 
 export default MyApp
